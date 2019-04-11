@@ -1,0 +1,45 @@
+{
+    "name": "phenom-llane",
+    "version": "0.0.1",
+    "private": true,
+    "description": "Website for Phenom-Llane",
+    "keywords": [],
+    "homepage": "https://github.com/phenom-llane/phenom-llane#readme",
+    "bugs": {
+        "url": "https://github.com/phenom-llane/phenom-llane/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/phenom-llane/phenom-llane.git"
+    },
+    "license": "MIT",
+    "author": "Joseph Morse <tamed.lionheart@gmail.com>",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "express": "^4.16.4",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-helmet": "^5.2.0",
+        "react-redux": "^7.0.1",
+        "react-router-dom": "^5.0.0",
+        "redux": "^4.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.3",
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
+        "@babel/plugin-transform-runtime": "^7.4.3",
+        "@babel/preset-env": "^7.4.3",
+        "@babel/preset-react": "^7.0.0",
+        "babel-loader": "^8.0.5",
+        "eslint": "^5.16.0",
+        "eslint-config-jnmorse": "^2.1.0",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.3.0"
+    }
+}
