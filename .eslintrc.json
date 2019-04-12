@@ -3,6 +3,43 @@
         "node": true,
         "browser": true
     },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detect"
+        }
+    },
     "extends": ["jnmorse"],
-    "rules": {}
+    "rules": {
+        "jsx-a11y/control-has-associated-label": [
+            "error",
+            {
+                "labelAttributes": ["label"],
+                "controlComponents": ["CustomComponent"],
+                "ignoreElements": [
+                    "audio",
+                    "canvas",
+                    "embed",
+                    "input",
+                    "textarea",
+                    "tr",
+                    "video",
+                    "link"
+                ],
+                "ignoreRoles": [
+                    "grid",
+                    "listbox",
+                    "menu",
+                    "menubar",
+                    "radiogroup",
+                    "row",
+                    "tablist",
+                    "toolbar",
+                    "tree",
+                    "treegrid"
+                ],
+                "depth": 3
+            }
+        ]
+    }
 }
