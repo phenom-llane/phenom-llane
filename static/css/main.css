@@ -1,0 +1,22 @@
+:root {
+  --black: rgb(20, 20, 20);
+  --white: rgb(230, 230, 230);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+header {
+  height: 10vh;
+  display: flex;
+}
+
+header img {
+  height: 100%;
+}

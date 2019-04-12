@@ -1,34 +1,42 @@
 {
-    "name": "phenom-llane",
-    "version": "0.0.1",
-    "private": true,
-    "description": "Website for Phenom-Llane",
-    "keywords": [],
-    "homepage": "https://github.com/phenom-llane/phenom-llane#readme",
-    "bugs": {
-        "url": "https://github.com/phenom-llane/phenom-llane/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/phenom-llane/phenom-llane.git"
-    },
-    "license": "MIT",
-    "author": "Joseph Morse <tamed.lionheart@gmail.com>",
-    "main": "index.js",
-    "scripts": {
-        "start": "next start",
-        "build": "next build",
-        "dev": "next",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "dependencies": {
-        "next": "^8.0.4",
-        "prop-types": "^15.7.2",
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6"
-    },
-    "devDependencies": {
-        "eslint": "^5.16.0",
-        "eslint-config-jnmorse": "^2.1.0"
-    }
+  "name": "phenom-llane",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Website for Phenom-Llane",
+  "keywords": [],
+  "homepage": "https://github.com/phenom-llane/phenom-llane#readme",
+  "bugs": {
+    "url": "https://github.com/phenom-llane/phenom-llane/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phenom-llane/phenom-llane.git"
+  },
+  "license": "MIT",
+  "author": "Joseph Morse <tamed.lionheart@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -s ./ -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "next": "^8.0.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-jnmorse": "^2.1.0",
+    "@storybook/react": "^5.0.6",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addons": "^5.0.6",
+    "@babel/core": "^7.4.3",
+    "babel-loader": "^8.0.5"
+  }
 }

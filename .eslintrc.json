@@ -3,6 +3,12 @@
         "node": true,
         "browser": true
     },
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
     "settings": {
         "react": {
             "pragma": "React",
@@ -11,6 +17,23 @@
     },
     "extends": ["jnmorse"],
     "rules": {
+        "jsx-a11y/anchor-is-valid": [
+            "error",
+            {
+                "components": ["Link"],
+                "specialLink": ["hrefLeft", "hrefRight"],
+                "aspects": ["noHref", "invalidHref", "preferButton"]
+            }
+        ],
+        "import/no-relative-parent-imports": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "**/*.stories.js"
+                ]
+            }
+        ],
         "jsx-a11y/control-has-associated-label": [
             "error",
             {
